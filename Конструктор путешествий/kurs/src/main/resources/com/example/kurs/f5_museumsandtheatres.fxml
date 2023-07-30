@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane accessibleRole="COMBO_BOX" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="700.0" style="-fx-background-color: FAF0E6;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kurs.f5_museumsandtheatres">
+    <children>
+        <Label layoutX="247.0" layoutY="14.0" prefHeight="44.0" prefWidth="393.0" text="Музеи и театры" textAlignment="CENTER" textFill="#2009cb" wrapText="true">
+            <font>
+                <Font name="Calibri" size="38.0" />
+            </font>
+        </Label>
+        <Text layoutX="245.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Выберите музеи для посещения" wrappingWidth="274.13671875">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Text>
+        <Button fx:id="button_finalsum" layoutX="408.0" layoutY="526.0" mnemonicParsing="false" onAction="#click_button_button_finalsum" prefHeight="54.0" prefWidth="125.0" text="Итоги" textAlignment="CENTER">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </Button>
+        <Button fx:id="button_back" layoutX="247.0" layoutY="526.0" mnemonicParsing="false" onAction="#click_button_back" prefHeight="54.0" prefWidth="125.0" text="Назад">
+            <font>
+                <Font size="21.0" />
+            </font></Button>
+      <Text layoutX="245.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Выберите театры для посещения" wrappingWidth="274.13671875">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <CheckBox fx:id="checkbox_1museum" layoutX="247.0" layoutY="135.0" mnemonicParsing="false">
+         <font>
+            <Font size="16.0" />
+         </font></CheckBox>
+      <CheckBox fx:id="checkbox_2museum" layoutX="247.0" layoutY="169.0" mnemonicParsing="false">
+         <font>
+            <Font size="16.0" />
+         </font></CheckBox>
+      <CheckBox fx:id="checkbox_3museum" layoutX="247.0" layoutY="203.0" mnemonicParsing="false">
+         <font>
+            <Font size="16.0" />
+         </font></CheckBox>
+      <CheckBox fx:id="checkbox_1theatre" layoutX="247.0" layoutY="272.0" mnemonicParsing="false">
+         <font>
+            <Font size="16.0" />
+         </font></CheckBox>
+      <CheckBox fx:id="checkbox_2theatre" layoutX="247.0" layoutY="308.0" mnemonicParsing="false">
+         <font>
+            <Font size="16.0" />
+         </font></CheckBox>
+      <CheckBox fx:id="checkbox_3theatre" layoutX="247.0" layoutY="344.0" mnemonicParsing="false">
+         <font>
+            <Font size="16.0" />
+         </font></CheckBox>
+    </children>
+</AnchorPane>

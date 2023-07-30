@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane accessibleRole="COMBO_BOX" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="700.0" style="-fx-background-color: FAF0E6;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kurs.f6_finalsum">
+    <children>
+        <Label layoutX="333.0" layoutY="14.0" prefHeight="44.0" prefWidth="98.0" text="Итоги" textAlignment="CENTER" textFill="#2009cb" wrapText="true">
+            <font>
+                <Font name="Calibri" size="38.0" />
+            </font>
+        </Label>
+        <Button fx:id="button_finish" layoutX="358.0" layoutY="526.0" mnemonicParsing="false" onAction="#click_button_finish" prefHeight="54.0" prefWidth="198.0" text="Завершить" textAlignment="CENTER">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </Button>
+        <Button fx:id="button_mainmenu" layoutX="114.0" layoutY="526.0" mnemonicParsing="false" onAction="#click_button_mainmenu" prefHeight="54.0" prefWidth="198.0" text="Главное меню">
+            <font>
+                <Font size="21.0" />
+            </font></Button>
+      <TableView fx:id="field_table" layoutX="16.0" layoutY="73.0" prefHeight="434.0" prefWidth="668.0">
+        <columns>
+          <TableColumn fx:id="field_object" prefWidth="249.0" text="Объект" />
+          <TableColumn fx:id="field_data" prefWidth="260.0" text="Дата" />
+            <TableColumn fx:id="field_sum" prefWidth="158.0" text="Сумма" />
+        </columns>
+      </TableView>
+    </children>
+</AnchorPane>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane accessibleRole="COMBO_BOX" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="700.0" style="-fx-background-color: FAF0E6;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kurs.f2_plan">
+    <children>
+        <Label layoutX="161.0" layoutY="14.0" prefHeight="44.0" prefWidth="378.0" text="Составление маршрута" textAlignment="CENTER" textFill="#2009cb" wrapText="true">
+            <font>
+                <Font name="Calibri" size="38.0" />
+            </font>
+        </Label>
+        <Text layoutX="265.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Выберите город" wrappingWidth="155.13671875">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Text>
+        <ComboBox fx:id="field_city" accessibleRole="CHECK_BOX" editable="true" layoutX="265.0" layoutY="114.0" prefHeight="25.0" prefWidth="174.0" />
+        <DatePicker fx:id="field_data" layoutX="265.0" layoutY="209.0">
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets></DatePicker>
+        <Text layoutX="265.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Выберите дату вылета" wrappingWidth="184.13671875">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Text>
+        <Text layoutX="261.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Введите количество дней" wrappingWidth="201.13671875">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Text>
+        <Text layoutX="265.0" layoutY="379.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Введите количество человек" wrappingWidth="217.13671875">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Text>
+        <Text layoutX="267.0" layoutY="465.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Выберите класс мест в самолёте" wrappingWidth="248.13671875">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Text>
+        <ComboBox fx:id="field_classofplane" accessibleRole="CHECK_BOX" editable="true" layoutX="267.0" layoutY="488.0" prefHeight="26.0" prefWidth="248.0" />
+        <Button fx:id="button_paramhotels" layoutX="343.0" layoutY="575.0" mnemonicParsing="false" onAction="#click_button_paramhotels" prefHeight="54.0" prefWidth="291.0" text="Перейти к выбору отеля" textAlignment="CENTER">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </Button>
+        <Button fx:id="button_back" layoutX="219.0" layoutY="575.0" mnemonicParsing="false" onAction="#click_button_back" prefHeight="54.0" prefWidth="92.0" text="Назад">
+         <font>
+            <Font size="21.0" />
+         </font></Button>
+      <TextField fx:id="field_days" layoutX="261.0" layoutY="314.0" />
+      <TextField fx:id="field_persons" layoutX="263.0" layoutY="407.0" />
+    </children>
+</AnchorPane>
